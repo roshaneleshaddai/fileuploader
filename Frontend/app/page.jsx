@@ -36,7 +36,7 @@ const Home = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/upload', formData, {
+      const response = await axios.post('https://fileuploader-0hpy.onrender.com/api/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -115,7 +115,7 @@ const Home = () => {
       }
 
       try {
-        const response = await axios.post('http://localhost:5000/api/import', {
+        const response = await axios.post('https://fileuploader-0hpy.onrender.com/api/import', {
           sheetName: selectedSheet,
           data: validRows, // Only send valid rows
         });
