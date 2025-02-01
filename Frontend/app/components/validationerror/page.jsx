@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const ValidationErrorModal = ({ errors, onClose }) => {
-  const [activeSheet, setActiveSheet] = useState(Object.keys(errors)[0]);
+    const [activeSheet, setActiveSheet] = useState(errors ? Object.keys(errors)[0] || "" : "");
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
