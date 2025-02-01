@@ -11,7 +11,9 @@ const app = express();
 const upload = multer({ storage : multer.memoryStorage() });
 
 
-app.use(cors());
+app.use(cors({
+  origin:'https://fileuploader-kappa.vercel.app',
+}));
 app.use(express.json()); // Allow JSON requests
 
 mongoose
