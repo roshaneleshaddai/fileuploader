@@ -3,8 +3,8 @@ import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
 import dynamic from "next/dynamic";
-const ValidationErrorModal = dynamic(() => import("@/components/validationerror/page"), { ssr: false });
-const  DataPreview= dynamic(() => import("@/components/datapreview/page"), { ssr: false });
+const ValidationErrorModal = dynamic(() => import("./components/validationerror/page"), { ssr: false });
+const  DataPreview= dynamic(() => import("./components/datapreview/page"), { ssr: false });
 
 import { toast, ToastContainer } from 'react-toastify';
 
