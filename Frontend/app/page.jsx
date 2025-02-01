@@ -99,9 +99,10 @@ const [selectedSheet, setSelectedSheet] = useState(""); // Tracks selected sheet
      {fileData && <DataPreview fileData={fileData} />}
       {showModal && (
            <ValidationErrorModal 
-             errors={validationErrors} || {}
-             onClose={() => setShowModal(false)} 
-           />
+  errors={validationErrors || {}} 
+  onClose={() => setShowModal(false)} 
+/>
+
          )}
 
     </div>
