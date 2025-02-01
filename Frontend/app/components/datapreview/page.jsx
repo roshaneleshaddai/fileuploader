@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import { Trash } from "lucide-react";
 import axios from "axios";
