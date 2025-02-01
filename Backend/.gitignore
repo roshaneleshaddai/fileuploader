@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled JavaScript files
+*.js.map
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# Temporary files
+tmp/
