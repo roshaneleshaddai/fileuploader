@@ -2,8 +2,8 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import axios from 'axios';
-import ValidationErrorModal from './components/validationerror/page';
-import DataPreview from './components/datapreview/page';
+import ValidationErrorModal from './components/validationerror';
+import DataPreview from './components/datapreview';
 import { toast, ToastContainer } from 'react-toastify';
 
 
