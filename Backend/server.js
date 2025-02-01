@@ -4,7 +4,7 @@ const multer = require("multer");
 const xlsx = require("xlsx");
 const cors = require("cors");
 const validateExcel = require("./utils/validateExcel");
-const DataModel = require("./models/data");
+const DataModel = require("./models/Data");
 
 const app = express();
 
